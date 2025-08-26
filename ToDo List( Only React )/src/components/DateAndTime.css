@@ -1,0 +1,18 @@
+.date-time {
+  font-size: 0.875rem;
+  color: var(--text-light);
+  animation: fadeIn 0.6s ease-out 0.1s both;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-time::before,
+.date-time::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: var(--text-light);
+  opacity: 0.2;
+}

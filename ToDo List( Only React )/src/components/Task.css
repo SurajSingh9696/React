@@ -1,0 +1,85 @@
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.task-item {
+  background-color: var(--card);
+  padding: 1rem;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  animation: fadeIn 0.4s ease-out;
+}
+
+.task-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.task-text {
+  flex: 1;
+  padding: 0 0.5rem;
+  word-break: break-word;
+  transition: var(--transition);
+}
+
+.task-text.completed {
+  text-decoration: line-through;
+  color: var(--text-light);
+  opacity: 0.8;
+}
+
+.task-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.task-btn {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.done-btn {
+  color: var(--text-light);
+}
+
+.done-btn:hover, .done-btn.active {
+  color: var(--success);
+}
+
+.delete-btn {
+  color: var(--text-light);
+}
+
+.delete-btn:hover {
+  color: var(--danger);
+}
+
+@keyframes taskAdded {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.task-item.added {
+  animation: taskAdded 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
