@@ -1,12 +1,52 @@
-# React + Vite
+# React ToDo List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+A simple and efficient ToDo List web application built with ReactJS. This app allows users to manage their daily tasks with features like adding, marking as complete, and deleting tasks. It uses local storage for data persistence, ensuring tasks are saved across browser sessions.
 
-Currently, two official plugins are available:
+## Features
+- Add new tasks
+- Mark tasks as completed
+- Delete individual tasks
+- Clear all tasks at once
+- Prevent duplicate tasks
+- Local storage persistence
+- Display current date and time
+- Responsive design
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- **Frontend:** ReactJS
+- **Build Tool:** Vite
+- **Styling:** CSS
+- **Icons:** Material-UI Icons, React Icons
+- **Utilities:** UUID for unique task IDs
 
-## Expanding the ESLint configuration
+## Installation and Setup
+1. Clone the repository:
+   ```
+   git clone <repository-url>
+   cd React/ToDo\ List
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Install dependencies:
+   ```
+   npm install
+   ```
+
+3. Start the development server:
+   ```
+   npm run start
+   ```
+
+4. Open your browser and navigate to `http://localhost:5173` (or the port shown in the terminal).
+
+## Usage
+- Enter a task in the input field and click "Add" or press Enter.
+- Click on a task to mark it as completed.
+- Click the delete icon to remove a task.
+- Use "Clear All" to remove all tasks.
+
+## Contributing
+Feel free to fork this project and submit pull requests.
+
+## License
+This project is open source and available under the [MIT License](LICENSE).
